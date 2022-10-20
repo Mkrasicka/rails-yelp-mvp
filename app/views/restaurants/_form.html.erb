@@ -1,0 +1,15 @@
+<%= simple_form_for(@restaurant) do |f| %>
+  <%= f.input :name %>
+  <%= f.input :address %>
+  <%= f.input :phone_number %>
+  <%= f.input :category, collection: Restaurant::CATEGORY %>
+  <%= f.submit class: 'btn btn-primary my-4' %>
+<% end %>
+
+<%# <select id="category" name="category">
+  <option value="chinese">Chinese</option>
+  <option value="italian">Italian</option>
+  <option value="japanese">Japanese</option>
+  <option value="french">French</option>
+  <option value="belgian">Belgian</option>
+  </select> %>
